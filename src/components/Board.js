@@ -7,7 +7,7 @@ export default function Board(props) {
         return (
             <Square 
                 value={props.squares[i]}
-                onClick={props.onClick(i)}
+                onClick={() => props.onClick(i)}
             />
         )
     }
